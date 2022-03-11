@@ -1,25 +1,11 @@
 package com.cc.java;
 
-public class Child {
+public class Child extends Parent{
     
- private String name;
 
- public Child(String name){
-     this.name = name;
- }
-
-public String getName() {
-    return name;
-}
-
-
-
- 
-
-
- 
-
-
-
+    public String sayHello() {
+        System.out.println(super.sayHello());
+        return "Hello from Child!";
+    }
 
 }
